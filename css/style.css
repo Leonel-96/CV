@@ -8,8 +8,6 @@
     box-sizing: border-box;
 }
 body{
-    padding: 0;
-    margin: 0;
     font-size: 13px;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -38,28 +36,40 @@ header{
     width: 170px;
  }
  nav .menu-icon{
-    width: 60px;
+    display: none;
+    position: absolute;
+    top: 32px;
+    right: 50px;
+    width: 35px;
     cursor: pointer;
  }
- nav ul{
-    flex: 1;
+ nav .nav-links{
     display: flex;
+    flex: 1;
     justify-content: flex-end;
     padding-right: 40px;
  }
-nav ul li{
+ nav .nav-links ul{
+    display: flex;
+ }
+nav .nav-links ul li{
     list-style-type: none;
     margin-left: 20px;
 }
-nav ul li a{
+nav .nav-links ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
     transition: color .3s;
 }
-nav ul li a:hover{
+nav .nav-links ul li.active a{
     color: #2eb0f0;
 }
+nav .nav-links ul li a:hover{
+    color: #2eb0f0;
+    text-decoration: none;
+}
+
 .overlay{
     position: absolute;
     top: 0;
@@ -107,9 +117,8 @@ nav ul li a:hover{
     margin-right: 30px;
     box-shadow: inset 0 0 0 0 #2eb0f0;
     transition: ease-out 0.4s;
-    position: relative;
 }
-.text a:hover{
+.text .btn1:hover{
     box-shadow: inset 300px 0 0 0 #2eb0f0;
     color: #fff;
 }
@@ -120,14 +129,13 @@ nav ul li a:hover{
     padding: 10px 20px;
     color: #121212;
     background-color: #2eb0f0;
-    position: relative;
     font-size: 1.25rem;
     font-weight: 600;
     min-width: 150px;
 }
 .text a.cv:hover{
     color: #2eb0f0;
-    background-color: none;
+    background-color: transparent !important;
     border: 1px solid #2eb0f0;
 }
 .auto-typing{
@@ -422,9 +430,40 @@ footer > h5{
     color: #fff;
     font-weight: normal;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:900px){
+    nav .nav-links{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255,255,255,0.20);
+        backdrop-filter: blur(7px);
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    nav .mobile-menu{
+        margin-left: 0;
+    }
+    nav .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav .nav-links ul li{
+        margin: 25px 0px;
+        font-size: 1.2em;
+    }
+    nav .menu-icon{
+        display: block;
+    }
+}
+@media screen and (max-width:900px) {
     .project-section{
-        margin-top: 5%;
+        margin-top: 15%;
     }
     .project-section h1{
         font-size: 1.5em;
@@ -436,7 +475,7 @@ footer > h5{
         max-width: 98%;
     }
     .text{
-        height: 70vh;
+        height: 80vh;
     }
     .text h1{
         line-height: 1.2;
