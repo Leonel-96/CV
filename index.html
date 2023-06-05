@@ -15,15 +15,63 @@
     <title>Profile</title>
 </head>
 <body>
-    <section id="about" class="container-fluid">
-        <div class="col-xs-8 col-md-4 profile-picture">
-            <img src="./img/DSC_3188ccusa.jpg" alt="Joas Leonel" class="img-circle">
+    <header>
+        <nav>
+            <a href="">
+                <img src="" alt="" class="logo">
+            </a>
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Mes projets</a></li>
+                <li><a href="">Curriculum Vitae</a></li>
+                <li><a href="">Mon Blog</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+            <img class="menu-icon" src="./img/menu.png" alt="">
+        </nav>
+    </header>
+    <section class="text">
+        <h1>Hey, je suis <span>ingenieur en expertise informatique et Système d'information</span>.</h1>
+            <p>Etudiant en fin année de Master d'Expertise informatique et système d'information
+                Dev( Big Data), j’ambitionne de mettre mes compétences au service d’une
+                entreprise à la culture innovante, enthousiaste et audacieuse. Grâce à un parcours
+                de formation approfondi et à une somme d’expériences professionnelles
+                performante,je suis devenu expert dans la conception et l’adaptation de sites et
+                d’applications web
+            </p>
+            <a href="" class="btn1">Me contacter</a><a href="./docs/CV_Joas Leonel_Sidjou Ngandjouong.pdf" class="cv btn2">Mon CV</a>
+    </section>
+    <section class="project-section">
+        <h1>Projet Réalisés</h1>
+        <div class="projects">
+            <div class="project-item">
+                <h4>Un robot createur de cookies</h4>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sint sit amet consectetur adipisicing elit. Aut, sint.</p>
+                <p class="dates">Date 2015 - 2016</p>
+            </div>
+            <div class="project-item">
+                <h4>Prévision du caractère humain</h4>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sint sit amet consectetur adipisicing elit. Aut, sint.</p>
+                <p class="dates">Date 2015 - 2016</p>
+            </div>
+            <div class="project-item">
+                <h4>Creation d'une assistance vocal</h4>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sint sit amet consectetur adipisicing elit. Aut, sint.</p>
+                <p class="dates">Date 2015 - 2016</p>
+            </div>
+            <div class="project-item">
+                <h4>Reconnaissance de formes</h4>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sint sit amet consectetur adipisicing elit. Aut, sint.</p>
+                <p class="dates">Date 2015 - 2016</p>
+            </div>
+            <!-- <div class="project-item">
+                <h4>Algorithmes de reconnaissances d'objets</h4>
+                <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sint sit amet consectetur adipisicing elit. Aut, sint.</p>
+                <p class="dates">Date 2015 - 2016</p>
+            </div> -->
         </div>
-        <div class="heading">
-            <h1>Hello, C'est moi Joas Leonel</h1>
-            <h3>Développeur Web</h3>
-            <a href="./docs/CV_Joas Leonel_Sidjou Ngandjouong.pdf" class="button1">Télécharger CV</a>
-        </div>
+    </section>
+    <section class="overlay">
     </section>
     <section id="skills">
         <div class="red-divider"></div>
@@ -210,53 +258,41 @@ Data)</h4>
             </div>
         </div>
     </section>
-    <section id="portofolio">
-       <div class="container">
-            <div class="red-divider"></div>
-            <div class="heading">
-                <h2>Portofolio</h2>
+    <footer class="bg-dark">
+        <div class="footer-content">
+            <div class="footer-item">
+                <h3>Mes services</h3>
+                <p>Dévéloppement des sites web</p>
+                <p>Dévéloppement d'application web et mobiles</p>
+                <p>Conception de maquettes UX Design</p>
+                <p>Maintenance de système d'information</p>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="http://www.facebook.com" class="thumbnail" target="_blank">
-                        <img src="./img/facebook.jpeg" alt="facebook">
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="http://www.google.com" class="thumbnail" target="_blank">
-                        <img src="./img/google-translate.jpg" alt="google translate">
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="http://www.twitter.com" class="thumbnail" target="_blank">
-                        <img src="./img/twitter.png" alt="twitter">
-                    </a>
-                </div>
+            <div class="footer-item">
+                <h3>Mon entreprise</h3>
+                <p>Projet entreprenarial</p>
+                <p>Une entreprise à but lucratif</p>
+                <p>Une communauté en pleine croissance</p>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="http://www.google.com" class="thumbnail" target="_blank">
-                        <img src="./img/youtube.jpeg" alt="youtube">
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="http://www.twitter.com" class="thumbnail" target="_blank">
-                        <img src="./img/twitter.png" alt="twitter retweet">
-                    </a>
-                </div>
-                <di v class="col-sm-4">
-                    <a href="http://www.facebook.com" class="thumbnail" target="_blank">
-                        <img src="./img/facebook.jpeg" alt="facebook video">
-                    </a>
-                </di>
+            <div class="footer-item">
+                <h3>Mes adresses</h3>
+                <p>sidjouleonel@gmail.com</p>
+                <p>joas89@yahoo.fr</p>
+                <p>+33641004182</p>
             </div>
-       </div>
-    </section>
-    <footer class="text-center bg-dark">
-        <a href="#about">
-            <span class="glyphicon glyphicon-chevron-up"></span> 
-        </a>
-        <h5>&copy; Copyright 2021 Joas Leonel Logic Technology Startup All right reserved, 91230 Montgeron</h5>
+        </div>
+        <!-- <h5>&copy; Copyright 2021 Joas Leonel Logic Technology Startup All right reserved, 91230 Montgeron</h5> -->
     </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed('.auto-typing', {
+            strings: ['développeur web Front-end',' développeur web Back-end','développeur web Full-stack'],
+            typeSpeed:100,
+            backSpeed: 100,
+            loop: true,
+            fadeOut: true,
+            fadeOutClass: 'type-fade-out',
+            fadeOutDelay: 500
+        })
+    </script>
 </body>
 </html>
