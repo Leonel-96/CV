@@ -94,7 +94,7 @@ nav ul li a:hover{
     letter-spacing: 1px;
     margin-bottom: 2rem;
 }
-.text a{
+.text .btn1{
     text-decoration: none;
     text-align: center;
     display: inline-block;
@@ -113,18 +113,22 @@ nav ul li a:hover{
     box-shadow: inset 300px 0 0 0 #2eb0f0;
     color: #fff;
 }
-.text a.cv{
+.text .cv{
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
     color: #121212;
     background-color: #2eb0f0;
     position: relative;
-    box-shadow: inset 0 0 0 0 transparent;
-    transition: ease-out 0.3s;
+    font-size: 1.25rem;
+    font-weight: 600;
+    min-width: 150px;
 }
 .text a.cv:hover{
     color: #2eb0f0;
     background-color: none;
     border: 1px solid #2eb0f0;
-    box-shadow: inset 300px 0 0 0 transparent;
 }
 .auto-typing{
     color: #2eb0f0;
@@ -351,7 +355,6 @@ section{
 #education .heading h2{
     color: #212529;
 }
-
 .education-block{
     width: 80%;
     margin: 0 auto;
@@ -385,7 +388,7 @@ section{
     background-color: #f37913 ;
 }
 
-/* PORTOFOLIO */
+/* Footer */
 footer{
     height: auto;
     padding: 70px 0px;
