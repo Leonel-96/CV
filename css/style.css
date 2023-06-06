@@ -55,12 +55,17 @@ header{
 nav .nav-links ul li{
     list-style-type: none;
     margin-left: 20px;
+    padding-bottom: 5px;
 }
 nav .nav-links ul li a{
     text-decoration: none;
     color: #fff;
+    font-weight: 600;
     font-size: 1.2rem;
     transition: color .3s;
+}
+nav .nav-links ul li.active{
+    border-bottom: 2px solid #2eb0f0;
 }
 nav .nav-links ul li.active a{
     color: #2eb0f0;
@@ -69,7 +74,6 @@ nav .nav-links ul li a:hover{
     color: #2eb0f0;
     text-decoration: none;
 }
-
 .overlay{
     position: absolute;
     top: 0;
@@ -117,26 +121,11 @@ nav .nav-links ul li a:hover{
     margin-right: 30px;
     box-shadow: inset 0 0 0 0 #2eb0f0;
     transition: ease-out 0.4s;
+    border-radius: 30px;
 }
 .text .btn1:hover{
     box-shadow: inset 300px 0 0 0 #2eb0f0;
     color: #fff;
-}
-.text .cv{
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #121212;
-    background-color: #2eb0f0;
-    font-size: 1.25rem;
-    font-weight: 600;
-    min-width: 150px;
-}
-.text a.cv:hover{
-    color: #2eb0f0;
-    background-color: transparent !important;
-    border: 1px solid #2eb0f0;
 }
 .auto-typing{
     color: #2eb0f0;
@@ -157,24 +146,61 @@ nav .nav-links ul li a:hover{
 }
 .project-section .projects{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex: 1;
     flex-wrap: wrap;
 }
-.project-section .projects .project-item{
-    max-width: 25%;
+.project-section .projects .project-card{
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+    margin: 0 20px 20px 0;
+    color: #fff;
+    border-radius: 10px;
+    background: url('/img/desktop.jpg');
+    background-size: cover;
+    max-width: 31.5%;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    position: relative;
+    z-index: 1;
 }
-.project-section .projects .project-item h4{
-    font-weight: 600;
-    margin: 0;
-} 
-.project-section .projects .project-item .project-description{
-    margin-top: 5%;
+.project-section .projects .project-card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(60deg,#29323c 0%,#485563 100%);
+    opacity: .8;
+    z-index: -1;
 }
-.project-section .projects .project-item .dates{
-    margin-top: 5%;
+.project-section .projects .project-card .project-card-icon{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+.project-section .projects .project-card .project-card-icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.project-section .projects .project-card h4{
     font-weight: 600;
-    color: #2eb0f0;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.project-section .projects .project-card p{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.project-section .projects .project-card .project-card-body{
+    display: flex;
+    flex-direction: column;
 }
 section .heading{
     text-align: center;
@@ -193,44 +219,11 @@ section{
     height: 2px;
     margin: 0 auto;
 }
-/* ABOUT */
-
-#about{
-    padding-top: 100px ;
-    background: #212529;
-}
-.profile-picture{
-    text-align: center;
-    margin: 0 auto;
-    float: none;
-}
-#about .heading h1{
-    color: #fff;
-    text-transform: uppercase;
-}
-#about .heading h3{
-    color: #fff;
-}
-.button1{
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    margin-top: 20px;
-    font-size: 14px;
-    display: inline-block;
-    padding: 18px 80px;
-    border: 1.5px solid #ffffff;
-    border-radius: 4px;
-}
-.button1:hover{
-    background: #fff;
-    color: #f37913;
-    text-decoration: none;
-}
 /* SKILLS */
 
 #skills{
+    width: 80%;
+    margin: 0 auto;
     background: #fff;
 }
 #skills .heading h2{
@@ -272,12 +265,12 @@ section{
 .timeline::before{
     position: absolute;
     top: 0;
+    left:50%;
     bottom: 0;
     width: 5px;
     content: "";
     background-color: #212529;
-    /* background-color: #f37913; */
-    left:50%;
+    
     margin-left: -2.5px;
 }
 .timeline li{
@@ -292,8 +285,6 @@ section{
     display: table;
 }
 .timeline li .timeline-badge{
-    /* color: #212529; */
-    color: #f37913;
     width: 50px;
     line-height: 50px;
     font-size: 20px;
@@ -303,6 +294,7 @@ section{
     text-align: center;
     margin-left: -25px;
     background-color: #fff;
+    color: #f37913;
     box-shadow: 0 1px 6px rgba(0,0,0,0.175);
     border-radius: 50%;
 }
@@ -361,19 +353,36 @@ section{
     background-color: #fff;
 }
 #education .heading h2{
-    color: #212529;
+    font-size: 2rem;
 }
 .education-block{
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 1px 6px rgba(0,0,0,0.175);
-    margin-bottom: 20px;
+    background: url('/img/laurea-ok.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.education-block::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(60deg,#29323c 0%,#485563 100%);
+    z-index: -1;
+    opacity: .8;
 }
 .education-block h5{
-    color: #888;
+    color: #f37913;
     font-size: 15px;
     margin-bottom: 15px;
 }
@@ -402,6 +411,11 @@ footer{
     padding: 70px 0px;
     background-color: #000;
 }
+footer > h5{
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+}
 .footer-content{
     max-width: 80%;
     margin-left: auto;
@@ -422,14 +436,7 @@ footer{
     margin-bottom: 5%;
     color: #2eb0f0;
 }
-.footer-content .footer-item p{
-    /* line-height: 30px; */
-}
-footer > h5{
-    text-align: center;
-    color: #fff;
-    font-weight: normal;
-}
+
 @media screen and (max-width:900px){
     nav .nav-links{
         position: absolute;
@@ -444,6 +451,12 @@ footer > h5{
         backdrop-filter: blur(7px);
         margin-left: -100%;
         transition: all 0.5s ease;
+    }
+    .education-block{
+        margin-bottom: 20px;
+    }
+    .education-block h4{
+        text-align: center;
     }
     nav .mobile-menu{
         margin-left: 0;
@@ -471,8 +484,9 @@ footer > h5{
     .project-section .projects{
         flex-direction: column;
     }
-    .project-section .projects .project-item{
-        max-width: 98%;
+    .project-section .projects .project-card{
+        max-width: 100%;
+        margin: 0 0px 20px 0px;
     }
     .text{
         height: 80vh;
