@@ -67,13 +67,13 @@ nav .nav-links ul li a{
     transition: color .3s;
 }
 nav .nav-links ul li.active{
-    border-bottom: 2px solid #2eb0f0;
+    border-bottom: 2px solid #8b3dff;
 }
 nav .nav-links ul li.active a{
-    color: #2eb0f0;
+    color: #8b3dff;
 }
 nav .nav-links ul li a:hover{
-    color: #2eb0f0;
+    color: #8b3dff;
     text-decoration: none;
 }
 .overlay{
@@ -90,7 +90,11 @@ nav .nav-links ul li a:hover{
 .profile-logo:hover{
     text-decoration: none;
 }
-.text{
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     max-width: 80%;
     margin-right: auto;
@@ -98,50 +102,68 @@ nav .nav-links ul li a:hover{
     height: 90vh;
     padding: 70px 0;
 }
-.text h1{
+.home h1{
     line-height: 1.2;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 4rem;
 }
-.text h1 span{
-    color: #2eb0f0;
+.home h1 span{
+    color: #8b3dff;
 }
-.text p{
+.home p{
     font-size: 1.5rem;
-    width: 58%;
+    width: 60%;
     line-height: 1.5;
     letter-spacing: 1px;
     margin-bottom: 4rem;
 }
-.text .btn1{
+.home .btn-contact .btn1{
     text-decoration: none;
     text-align: center;
     display: inline-block;
     padding: 10px 20px;
-    color: #2eb0f0;
-    border: 1px solid #2eb0f0;
+    color: #8b3dff;
+    border: 1px solid #8b3dff;
     font-size: 1.25rem;
     font-weight: 600;
     min-width: 150px;
     margin-right: 30px;
-    box-shadow: inset 0 0 0 0 #2eb0f0;
+    box-shadow: inset 0 0 0 0 #8b3dff;
     transition: ease-out 0.4s;
     /* border-radius: 30px; */
 }
-.text .btn1:hover{
-    box-shadow: inset 300px 0 0 0 #2eb0f0;
+.btn-contact{
+    margin-top: 40px;
+    display: flex;
+}
+.social-media{
+    display: flex;
+    margin: 10px 0;
+}
+.social-media a{
+    font-size: 30px;
+    color: #8b3dff;
+    text-decoration: none;
+    padding-right: 16px;
+}
+.home .btn-contact .btn1:hover{
+    box-shadow: inset 300px 0 0 0 #8b3dff;
     color: #fff;
 }
 .auto-typing{
     color: #2eb0f0;
 }
 .project-section{
-    margin-top: 2%;
-    max-width: 80%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: auto;
     margin-right: auto;
     margin-left: auto;
+    background: #f8f9f9;
 }
 .project-section h1{
     font-family: 'Oswald', sans-serif;
@@ -152,7 +174,7 @@ nav .nav-links ul li a:hover{
 }
 .project-section .projects{
     display: flex;
-    /* justify-content: space-between; */
+    width: 80%;
     flex: 1;
     flex-wrap: wrap;
 }
@@ -207,6 +229,7 @@ nav .nav-links ul li a:hover{
 .project-section .projects .project-card .project-card-body{
     display: flex;
     flex-direction: column;
+    
 }
 section .heading{
     text-align: center;
@@ -225,12 +248,50 @@ section{
     height: 2px;
     margin: 0 auto;
 }
-/* SKILLS */
+/* <!------------------------------------- SKILLS --------------------------------!> */
 
 #skills{
     width: 80%;
     margin: 0 auto;
     background: #fff;
+}
+#skills .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#skills ul {
+    width: 22%;
+    margin-left: auto;
+    margin-left: auto;
+}
+#skills ul li{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 20px;
+}
+#skills ul li::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+    background-color: #8b3dff;
+}
+#skills ul:nth-child(1) li::before{
+    left: 1%;  
+}
+#skills ul:nth-child(2) li::before{
+    left: 25%;
+}
+#skills ul:nth-child(3) li::before{
+    right: 50%;
+}
+#skills ul:nth-child(4) li::before{
+    right: 26%;
 }
 #skills .heading h2{
     color: #212529;
@@ -242,18 +303,22 @@ section{
     backface-visibility: #ddd;
 }
 #skills .progress-bar{
-    background: #f37913;
+    /* background: #f37913; */
+    background: #8b3dff;
 }
 #skills .progress h5{
     text-transform: 1px 1px 1px #000;
 }
 
+/* <!------------------------------------- END SKILLS --------------------------------!> */
 
-/* EXPERIENCES */
+
+/* <!------------------------------------- EXPERIENCES --------------------------------!> */
 
 #experiences{
-    /* background: #212529; */
-    background-color: rgb(246, 239, 226);
+    background: #f8f9f9;
+    /* background-color: #efefef; */
+    /* background-color: rgb(246, 239, 226); */
 }
 #experiences .heading h2{
     color: #f37913;
@@ -353,7 +418,9 @@ section{
     color: #423ff4;
 }
 
-/* EDUCATION*/
+/* <!------------------------------------- END EXPERIENCES --------------------------------!> */
+
+/* <!------------------------------------- FORMATION --------------------------------!> */
 
 #education{
     background-color: #fff;
@@ -411,15 +478,23 @@ section{
     background-color: #f37913 ;
 }
 
-/* Footer */
+/* <!------------------------------------- END EDUCATION --------------------------------!> */
+
+/* <!------------------------------------- FOOTER --------------------------------!> */
 footer{
     height: auto;
     padding: 70px 0px;
-    background-color: #000;
+    background-color: #efefef;
 }
-footer > h5{
+.copyright {
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
     text-align: center;
-    color: #fff;
+} 
+.copyright h5{
+    text-align: center;
+    color: #000;
     font-weight: normal;
 }
 .footer-content{
@@ -429,7 +504,7 @@ footer > h5{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    color: #fff;
+    color: #000;
 }
 .footer-content .footer-item{
     width: 25%;
@@ -442,9 +517,6 @@ footer > h5{
     margin-bottom: 5%;
     color: #2eb0f0;
 }
-/* .footer-content .footer-item p{
-    line-height: 1.6rem;
-} */
 .footer-content .footer-item div{
     display: flex;
 }
@@ -452,6 +524,8 @@ footer > h5{
     font-size: 25px;
     margin-right: 15px;
 }
+
+/* <!------------------------------FIN FOOTER-----------------------------------!> */
 
 .reveal{
     position: relative;
@@ -465,6 +539,125 @@ footer > h5{
     opacity: 1;
 }
 
+/* <!--  -------------------- PROJET REALISES---------------------------------> */
+
+.slide-container{
+    background-color: #efefef;
+    /* max-width: 1120px; */
+    width: 100%;
+    padding: 40px 0px;
+}
+.slide-container h1{
+    text-align: center;
+    font-size: 35px;
+    margin: 50px 0;
+}
+.card-wrapper{
+    display: flex;
+}
+.slide-content{
+    margin: 20px 40px;
+    overflow: hidden;
+}
+
+.image-content,.card-content{
+    display: flex;
+    padding: 10px 14px;
+    flex-direction: column;
+    align-items: center;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+.card{
+    width: 25%;
+    height: auto;
+    border-radius: 25px;
+    background-color: #fff;
+}
+.overlay-card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #8b3dff;
+    border-radius: 25px 25px 0px 25px;
+    left: 0;
+    top: 0;
+}
+.overlay-card::before,
+.overlay-card::after{
+    content: '';
+    height: 40px;
+    width: 40px;
+    right: 0;
+    bottom: -40px;
+    background-color: #8b3dff;
+    position: absolute;
+}
+.overlay-card::after{
+    border-radius: 0 25px 0px 0px;
+    background-color: #fff;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    padding: 3px;
+}
+.card-image .card-img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 1.4rem 0;
+}
+.description{
+    font-size: 14px;
+    text-align: center;
+    margin: 1.4rem 0;
+}
+.button{
+    border: none;
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 8px 16px;
+    background: #8b3dff;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background-color: #2eb0f0;
+}
+.swiper-navBtn{
+    color: #6e93f7;
+    transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+    color: #4070f4
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+
+/* <!---------- -----------------------FIN DE PROJET REALISES --------------------------------> */
+
+/* <!------------------------------------- MOBILE VIEW --------------------------------!> */
 @media screen and (max-width:900px){
     nav .nav-links{
         position: absolute;
@@ -501,6 +694,25 @@ footer > h5{
     nav .menu-icon{
         display: block;
     }
+    #skills .container{
+        flex-direction: column;
+    }
+    #skills .container ul{
+        width: 100%;
+        text-align: center;
+    }
+    #skills ul:nth-child(1) li::before{
+        left: 20% ;
+    }
+    #skills ul:nth-child(2) li::before{
+        left: 20%;
+    }
+    #skills ul:nth-child(3) li::before{
+        left: 20% ;
+    }
+    #skills ul:nth-child(4) li::before{
+        left: 20% ;
+    }
 }
 @media screen and (max-width:900px) {
     .project-section{
@@ -516,16 +728,16 @@ footer > h5{
         max-width: 100%;
         margin: 0 0px 20px 0px;
     }
-    .text{
+    .home{
         height: 90vh;
     }
-    .text h1{
+    .home h1{
         line-height: 1.2;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: bold;
         margin-bottom: 2rem;
     }
-    .text p{
+    .home p{
         -webkit-line-clamp: 4;
         display: -webkit-box;
         font-size: 1.2rem;
@@ -535,9 +747,13 @@ footer > h5{
         width: 100%;
         height: 40%;
     }
-    .text a{
+    .home a{
         margin-bottom: 30px;
         width: 100%;
+    }
+    .btn-contact{
+        display: flex;
+        flex-direction: column;
     }
     .footer-content{
         max-width: 80%;
@@ -546,10 +762,19 @@ footer > h5{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        color: #fff;
+        color: #000;
     }
     .footer-content .footer-item{
         width: 100%;
+    }
+     .copyright{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .copyright h5{
+        text-align: left;
+        line-height: 1.2rem;
     }
 }
 
