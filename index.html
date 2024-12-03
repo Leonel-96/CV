@@ -33,14 +33,16 @@
 
     <!-- JS -->
     <script src="./js/script.js" defer></script>
-    <title>LEONEL-SIDJOU-PORTFOLIO</title>
+    <script src="./js/auto-typing.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <title>Leonel Sidjou Portfolio</title>
 </head>
 <body>
     <header>
         <nav>
             <a href="" class="profile-logo">
-                <img src="./img/SNJL_TECH_LOGO.png" alt="image-logo" class="logo rounded-pill" style="width:70px;">
-                <span style="font-weight: 600; font-size: 24px;">SNJL Tech</span>
+                <img src="./img/SNJL_TECH_LOGO.png" alt="image-logo" class="logo rounded-pill" style="width:60px;">
+                <span style="font-weight: 600; font-size: 22px;">SNJL Tech</span>
             </a>
             <div class="nav-links">
                 <ul>
@@ -54,26 +56,30 @@
             <img class="menu-icon" src="./img/menu.png" alt="">
         </nav>
     </header>
-    <section class="home">
-        <h1>Hey, Je suis Mr. Sidjou Ngandjouong Joas leonel, <span class="auto-typing">Ingénieur en expertise informatique et système d'information</span>.</h1>
-            <p>Diplomé d'un Master en Expertise informatique et système d'information
-                Dev( Big Data), j’ambitionne de mettre mes compétences au service d’une
-                entreprise à la culture innovante, enthousiaste et audacieuse. Grâce à un parcours
-                de formation approfondi et à une somme d’expériences professionnelles
-                performante,j'ai développé un ensemble de compétences dans la gestion de système d'information et la conception et le développement d'application web et mobiles.
-            </p>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/joas-leonel-sidjou-ngandjouong-9326081ab/"><i class="fa fa-linkedin-square i-resize" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/joas.sidjou/"><i class="fa fa-facebook-square"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.instagram.com/joassidjou/"><i class="fa fa-instagram i-resize"></i></a> 
+    <section class="home" id="home">
+            <div class="home-content">
+                <h1>Hello, Je suis Sidjou Joas Leonel,<br><span class="auto-typing"></span></h1>
+                <p>Diplômé d'un Master 2 en Expertise informatique et Systèmes d'information Dev (Big Data). Fort d'une expérience
+                    diversifiée dans le développement web, je combine expertise technique et créativité pour concevoir des solutions
+                    innovantes. Cherche à intégrer une équipe dynamique pour relever de nouveaux défis technologiques et contribuer à
+                    des projets d'envergure.
+                </p>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/joas-leonel-sidjou-ngandjouong-9326081ab/"><i class="fa fa-linkedin-square i-resize" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/joas.sidjou/"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/joassidjou/"><i class="fa fa-instagram i-resize"></i></a> 
+                </div>
+                <div class="btn-contact">
+                    <a href="#contact" class="btn-option">Me contacter</a>
+                    <a href="./docs/CV_2024-11-14_Joas_Sidjou.pdf" class="btn-option">Mon CV</a>
+                </div>
             </div>
-            <div class="btn-contact">
-                <a href="#footer" class="btn1">Me contacter</a>
-                <a href="./docs/CV_2023-09-28_Joas Leonel_Sidjou Ngandjouong.pdf" class="btn1">Mon CV</a>
+            <div class="home-img">
+                <img src="./img/DSC_7823cc USA-Photoroom.png" alt="">
             </div>
     </section>
-    <!-- <section id="projects" class="project-section reveal">
+    <section id="projects" class="project-section reveal">
         <h1>Projet Réalisés</h1>
         <div class="projects">
             <div class="project-card">
@@ -83,6 +89,7 @@
                     <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sint sit amet consectetur adipisicing elit. Aut, sint.</p>
                     <p class="dates">Date 2015 - 2016</p>
                 </div>
+                <div class="project-read"><a href="">Read more...</a></div>
             </div>
             <div class="project-card">
                 <div class="project-card-icon"><img src="/img/icons8-tools-50.png" alt=""></div>
@@ -91,6 +98,7 @@
                     <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sint sit amet consectetur adipisicing elit. Aut, sint.</p>
                     <p class="dates">Date 2018 - 2019</p>
                 </div>
+                <div class="project-read"><a href="">Read more...</a></div>
             </div>
             <div class="project-card">
                 <div class="project-card-icon"><img src="/img/icons8-tools-50.png" alt=""></div>
@@ -98,7 +106,8 @@
                     <h4>Marketplace de la reparation d'appareil electronique</h4>
                     <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sint sit amet consectetur adipisicing elit. Aut, sint.</p>
                     <p class="dates">Date 2022 - 2023</p>
-                </div>  
+                </div>
+                <div class="project-read"><a href="">Read more...</a></div> 
             </div>
             <div class="project-card">
                 <div class="project-card-icon"><img src="/img/icons8-tools-50.png" alt=""></div>
@@ -107,6 +116,7 @@
                     <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sint sit amet consectetur adipisicing elit. Aut, sint.</p>
                     <p class="dates">Date 2022 - 2023</p>
                 </div>
+                <div class="project-read"><a href="">Read more...</a></div>
             </div>
             <div class="project-card">
                 <div class="project-card-icon"><img src="/img/icons8-tools-50.png" alt=""></div>
@@ -114,321 +124,248 @@
                     <h4>Algorithmes de reconnaissances d'objets</h4>
                     <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sint sit amet consectetur adipisicing elit. Aut, sint.</p>
                     <p class="dates">Date 2015 - 2016</p>
-                </div>
-                
+                </div> 
+                <div class="project-read"><a href="">Read more...</a></div> 
             </div>
         </div>
-    </section> -->
+    </section>
 
     <section class="overlay">
     </section>
-
-    <div id="projects" class="slide-container swiper reveal">
-        <h1>Projet Réalisés</h1>
-        <div class="slide-content">
-            <div class="card-wrapper swiper-wrapper">
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay-card"></span>
-                        <div class="card-image">
-                            <img src="img/DSC_3188ccusa.jpg" alt="" class="card-img">
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="name">Un robot createur de cookies</h2>
-                        <p class="descriptem">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis obcaecati eligendi quae voluptas a omnis culpa molestiae debitis. 
-                        </p>
-                        <p class="dates">Date 2015 - 2016</p>
-                        <button class="button">View more</button>
-                    </div>
-                </div>
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay-card"></span>
-                        <div class="card-image">
-                            <img src="img/DSC_3188ccusa.jpg" alt="" class="card-img">
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="name">Creation de site Ecommerce</h2>
-                        <p class="descriptem">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis obcaecati eligendi quae voluptas a omnis culpa molestiae debitis. 
-                        </p>
-                        <p class="dates">Date 2018 - 2019</p>
-                        <button class="button">View more</button>
-                    </div>
-                </div>
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay-card"></span>
-                        <div class="card-image">
-                            <img src="img/DSC_3188ccusa.jpg" alt="" class="card-img">
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="name">Marketplace de la reparation d'appareil electronique</h2>
-                        <p class="descriptem">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis obcaecati eligendi quae voluptas a omnis culpa molestiae debitis. 
-                        </p>
-                        <p class="dates">Date 2022 - 2023</p>
-                        <button class="button">View more</button>
-                    </div>
-                </div>
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay-card"></span>
-                        <div class="card-image">
-                            <img src="img/DSC_3188ccusa.jpg" alt="" class="card-img">
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="name">Menu Burger en ligne pour Fast food</h2>
-                        <p class="descriptem">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis obcaecati eligendi quae voluptas a omnis culpa molestiae debitis. 
-                        </p>
-                        <p class="dates">Date 2022 - 2023</p>
-                        <button class="button">View more</button>
-                    </div>
-                </div>
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay-card"></span>
-                        <div class="card-image">
-                            <img src="img/DSC_3188ccusa.jpg" alt="" class="card-img">
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="name">Algorithmes de reconnaissances d'objets</h2>
-                        <p class="descriptem">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis obcaecati eligendi quae voluptas a omnis culpa molestiae debitis. 
-                        </p>
-                        <p class="dates">Date 2015 - 2016</p>
-                        <button class="button">View more</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
-        <div class="swiper-pagination"></div>
-    </div>
 
     <section id="skills" class="reveal">
         <div class="red-divider"></div>
         <div class="heading">
             <h2>Compétences</h2>
         </div>
-        <div class="container">
-            <ul>
-                <li>Html 5</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Bootstrap</li>
-                <li>TypeScript</li>
-            </ul>
-            <ul>
-                <li>PHP</li>
-                <li>SQL</li>
-                <li>GIT</li>
-                <li>Laravel</li>
-                <li>Symfony</li>
-            </ul>
-            <ul>
-                <li>Python</li> 
-                <li>React</li>
-                <li>Angular</li>
-                <li>Vuejs</li>
-                <li>JQuery</li>
-            </ul>
-            <ul>
-                <li>JSON</li>
-                <li>JIRA</li>
-                <li>GITHUB</li>
-                <li>Visual Studio</li>
-                <li>Postman</li>     
-            </ul>
-            <!-- <div class="row">
-                <div class="col-md-6">
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemax="100" aria-valuemin="0" style="width:85%;">
-                            <h5>HTML 85%</h5>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemax="100" aria-valuemin="0" style="width:85%;">
-                            <h5>CSS 85%</h5>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemax="100" aria-valuemin="0" style="width:85%;">
-                            <h5>JAVASCRIPT 85%</h5>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemax="100" aria-valuemin="0" style="width:85%;">
-                            <h5>SQL 85%</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemax="100" aria-valuemin="0" style="width:85%;">
-                            <h5>JQUERY 85%</h5>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemax="100" aria-valuemin="0" style="width:85%;">
-                            <h5>BOOTSTRAP 85%</h5>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemax="100" aria-valuemin="0" style="width:85%;">
-                            <h5>REACT 85%</h5>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemax="100" aria-valuemin="0" style="width:85%;">
-                            <h5>PHP 85%</h5>
-                        </div>
-                    </div>
+        <div class="skills-container">
+            <div class="skills-card">
+                <h3>Langages de Programmation</h3>
+                <ul>
+                    <li>C</li>
+                    <li>Python</li> 
+                    <li>PHP</li>
+                    <li>SQL</li>
+                    <li>Java</li>
+                    <li>Html 5</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="skills-card">
+                <h3>Framework</h3>
+                <ul>
+                    <li>Bootstrap</li>     
+                    <li>Laravel</li>
+                    <li>Symfony</li>
+                    <li>React</li>
+                    <li>Angular</li>
+                    <li>TypeScript</li>
+                    <li>Vuejs</li>
+                    <li>Nextjs</li>
                     
-                </div>
-            </div>--> 
+                </ul>
+            </div>
+            <div class="skills-card">
+                <h3>Méthodologie projet/Certif</h3>
+                <ul>
+                    <li>Agile Scrum</li>
+                    <li>Kanban </li>
+                    <li>ITIL </li>
+                </ul>
+            </div>
+            <div class="skills-card">
+                <h3>Base de données</h3>
+                <ul>
+                    <li>MYSQL</li>
+                    <li>ORACLE</li>    
+                </ul>
+            </div>
+            <div class="skills-card">
+                <h3>WEBSERVICES / API</h3>
+                <ul>
+                    <li>JSON</li>
+                    <li>REST</li>    
+                </ul>
+            </div>
+            <div class="skills-card">
+                <h3>OUTIL DE VERSIONNING</h3>
+                <ul>
+                    <li>GITLAB,</li>
+                    <li>GITHUB</li>    
+                </ul>
+            </div>
+            <div class="skills-card">
+                <h3>OUTILS DE TRAVAIL COLLABORATIF</h3>
+                <ul>
+                    <li>Trello,</li>
+                    <li>Jira</li>
+                    <li>Slack</li>
+                    <li>Notion</li>
+                    <li>Teams</li>  
+                </ul>
+            </div>
+            
         </div>
     </section>
-    <section id="experiences" class="">
-        <div class="white-divider"></div>
+   
+  <section id="experiences" class="section reveal">
         <div class="heading">
-            <h2>Experiences Profesionnelle</h2>
+            <h2>Expériences Professionnelles</h2>
+            <div class="white-divider"></div>
         </div>
-        <ul class="timeline ">
-            <li>
-                <div class="timeline-badge"> <span class="glyphicon glyphicon-briefcase"></span></div>
-                <div class="timeline-panel-container">
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h3>Reevive</h3>
-                            <h4>Développeur Web Full Stack</h4>
-                            <p class="text-muted">
-                                <small class="glyphicon glyphicon-time"></small>
-                                De Septembre 2022 à Septembre 2023
-                            </p>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Conception et développement d'interfaces clients performant</p>
-                            <p>Maintenance et mise à jour des fonctionnalités de la plateforme
-                                web Reevive</p>
-                            <p>Utilisation de frameworks tels que Laravel 7.4 et Vue.js pour le
-                                développement de la Marketplace de Reevive</p>
-                            <p>Faire des analyses strategiques et propositions d’ameliorations,
-                                donc utilisation d'API Rest pour des valeurs JSON</p>
-                            <p>Participation à des projets de groupe en agilité Scrum</p>
-                        </div>
+        
+        <div class="experiences-container">
+            
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="company-logo">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="experience-title">
+                        <h3>Paris Fashion Shops</h3>
+                        <h4>Développeur Web Full Stack</h4>
+                        <span class="date">Novembre 2023 - Aout 2024</span>
                     </div>
                 </div>
-            </li>
-            <li>
-                <div class="timeline-badge"> <span class="glyphicon glyphicon-briefcase"></span></div>
-                <div class="timeline-panel-container-inverted">
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h3>ECOHESENS</h3>
-                            <h4>Développeur web Front-end (React)</h4>
-                            <p class="text-muted">
-                                <small class="glyphicon glyphicon-time"></small>
-                                De janvier 2022 à Juillet 2022
-                            </p>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Conception et développement de sites web responsives et
-                                interactifs pour les clients de l'entreprise.</p>
-                            <p>Adaptation et optimisation de sites et applications web existantsAdaptation et optimisation de sites et applications web existants</p>
-                            <p>Maintenance et mise à jour du site web existant de ECOHESENS et une integration continue.</p>
-                            <p>Utilisation de frameworks front-end tels que Reactjs pour le développement du site web (ECOHESENS)</p>
-                        </div>
+                <div class="experience-content">
+                    <ul>
+                        <li>Conception et développement d'interfaces clients performant</li>
+                        <li>Maintenance et mise à jour des fonctionnalités</li>
+                        <li>Utilisation de Laravel 7.4 et Vue.js</li>
+                        <li>Analyses stratégiques et propositions d'améliorations</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="company-logo">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="experience-title">
+                        <h3>REEVIVE</h3>
+                        <h4>Développeur Web Full Stack</h4>
+                        <span class="date">Septembre 2022 - Septembre 2023</span>
                     </div>
                 </div>
-            </li>
-            <li>
-                <div class="timeline-badge"> <span class="glyphicon glyphicon-briefcase"></span></div>
-                <div class="timeline-panel-container">
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h3>StartUp MYJOULEBOX</h3>
-                            <h4>Développeur web Front-end (React)</h4>
-                            <p class="text-muted">
-                                <small class="glyphicon glyphicon-time"></small>
-                                D'avril 2021 à Juin 2021
-                            </p>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Intégration de systèmes tiers tels que des API et des systèmes de
-                                paiement</p>
-                            <p>Analyse des interfaces et propositions d’amelioration</p>
-                            <p>Conception et implémentation d'interfaces clients performant via
-                                le framework React js</p>
-                            <p>Adaptation et optimisation de sites et applications web existants</p>
-                        </div>
+                <div class="experience-content">
+                    <ul>
+                        <li>Conception et développement d'interfaces clients performant</li>
+                        <li>Maintenance et mise à jour des fonctionnalités</li>
+                        <li>Utilisation de Laravel 7.4 et Vue.js</li>
+                        <li>Analyses stratégiques et propositions d'améliorations</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="company-logo">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="experience-title">
+                        <h3>ECOHESENS</h3>
+                        <h4>Développeur Front-End (React)</h4>
+                        <span class="date">Janvier 2022 - Juillet 2022</span>
                     </div>
                 </div>
-            </li>
-            <li>
-                <div class="timeline-badge"> <span class="glyphicon glyphicon-briefcase"></span></div>
-                <div class="timeline-panel-container-inverted">
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h3>Data School Center Startup</h3>
-                            <h4>Développeur Web Full Stack</h4>
-                            <p class="text-muted">
-                                <small class="glyphicon glyphicon-time"></small>
-                                D'octobre 2018 à Mai 2019
-                            </p>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Analyse des besoins clients, étude de la faisabilité de leur projet,
-établissement du cahier des charges, rédaction des spécifications
-fonctionnelles</p>
-                            <p>Conception et implémentation d'interfaces clients performant via
-                                le framework React js</p>
-                            <p>Focus sur la portabilité et l’accessibilité sur tous les supports</p>
-                        </div>
+                <div class="experience-content">
+                    <ul>
+                        <li>Conception et développement d'interfaces clients performant</li>
+                        <li>Maintenance et mise à jour des fonctionnalités</li>
+                        <li>Utilisation de Laravel 7.4 et Vue.js</li>
+                        <li>Analyses stratégiques et propositions d'améliorations</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="company-logo">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="experience-title">
+                        <h3>MYJOULEBOX</h3>
+                        <h4>Développeur Front-End (React)</h4>
+                        <span class="date">Avril 2021 - Juin 2021</span>
                     </div>
                 </div>
-            </li>
-        </ul>
-    </section>
+                <div class="experience-content">
+                    <ul>
+                        <li>Conception et développement d'interfaces clients performant</li>
+                        <li>Maintenance et mise à jour des fonctionnalités</li>
+                        <li>Utilisation de Laravel 7.4 et Vue.js</li>
+                        <li>Analyses stratégiques et propositions d'améliorations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+  
+
     <section id="education" class="reveal">
         <div class="heading">
             <h2>Formation</h2>
         </div>
         <div class="container">
-            <div class="row">
-                    <div class="col-sm-6">
-                        <div class="education-block">
-                            <h5>2019 - 2020</h5>
-                            <span class="glyphicon glyphicon-education"></span>
-                            <h3>Institut Universitaire de la cote</h3>
-                            <h4>Bachelor of Technology in Software engineering,Computer Engineering</h4>
-                            <div class="red-divider"></div>
-                            <p>Intelligences Artificielle</p>
-                            <p>Systeme d'information</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="education-block">
-                            <h5>2021 - 2023</h5>
-                            <span class="glyphicon glyphicon-education"></span>
-                            <h3>EPSI Paris</h3>
-                            <h4>Master en Expertise informatique et Système d'information (Big
-Data)</h4>
-                            <div class="red-divider"></div>
-                            <p>Intelligences Artificielle</p>
-                            <p>Systeme d'information</p>
-                        </div>
-                    </div>
-                <div class="col-sm-6"></div>
+            <div class="education-content">              
+                <div class="education-block">
+                    <h5>2017 - 2020</h5>
+                    <span class="glyphicon glyphicon-education"></span>
+                    <h3>Institut Universitaire de la cote</h3>
+                    <h4>Bachelor of Technology in Software engineering,Computer Engineering</h4>
+                    <div class="red-divider"></div>
+                    <p>Conception et Développement de logicielle Informatique</p>
+                    <p>Systeme d'information</p>
+                </div>
+        
+                <div class="education-block">
+                    <h5>2021 - 2023</h5>
+                    <span class="glyphicon glyphicon-education"></span>
+                    <h3>EPSI Paris</h3>
+                    <h4>Master en Expertise informatique et Système d'information (BigData)</h4>
+                    <div class="red-divider"></div>
+                    <p>Système d'information</p>
+                    <p>Analyses de données</p>
+                </div>
             </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <div class="contact-header">
+            <h2>Contact</h2>
+        </div>
+        <div class="contact-content">
+            <form id="contactForm" action="">
+                <div class="form-content">
+                    <label for="firstname">Prénom:</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Entre votre prénom ">
+                    <span class="error" id="error-firstname"></span>
+                </div>
+                <div class="form-content">
+                    <label for="lastname">Nom:</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Entre votre nom">
+                    <span class="error" id="error-lastname"></span>
+                </div>
+                <div class="form-content">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Entre votre email">
+                    <span class="error" id="error-email"></span>
+                </div>
+                <div class="form-content">
+                    <label for="telephone">Téléphone:</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Entre votre téléphone">
+                    <span class="error" id="error-telephone"></span>
+                </div>
+                <div class="form-content-message">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" placeholder="Votre message"></textarea>
+                    <span class="error" id="error-message"></span>
+                </div>
+                <div class="form-btn">
+                    <input type="submit" class="btn-validation" value="Envoyer">
+                </div>
+                
+            </form>
         </div>
     </section>
     <footer id="footer">
@@ -468,48 +405,5 @@ Data)</h4>
             <h5 class="copyright">&copy; Copyright 2023 Joas Leonel Logic Technology Startup All right reserved, 91230 Montgeron</h5>
         </div>
     </footer>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        let typed = new Typed('.auto-typing', {
-            strings: ["Ingénieur en expertise informatique et système d'information",'Dévéloppeur web Front-end',' Dévéloppeur web Back-end','Dévéloppeur web Full-stack'],
-            typeSpeed:50,
-            backSpeed: 50,
-            loop: true,
-            fadeOut: true,
-            fadeOutClass: 'type-fade-out',
-            fadeOutDelay: 500
-        });
-
-        var swiper = new Swiper(".slide-content", {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            slidesPerGroup: 3,
-            loop: true,
-            centerSlide: 'true',
-            fade: 'true',
-            grabCursor: 'true',
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                dynamicBullets: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                },
-                520: {
-                    slidesPerView: 2,
-                },
-                950: {
-                    slidesPerView: 4,
-                }
-            }
-
-        });
-    </script>
-</body>
+    
 </html>
