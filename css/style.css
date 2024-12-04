@@ -749,17 +749,19 @@ section{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 1.5rem;
 }
 .form-content{
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-    margin: 10px 20px;
+    flex: 1 1 calc(50% - 0.75rem);
+    min-width: 250px;
 }
-.form-content label{
-    margin: 10px 0px;
-    font-size: 1.2rem;
+.form-content label,
+.form-content-message label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
 }
 .form-content input{
     width: 100%;
@@ -780,12 +782,8 @@ section{
 .form-content-message,.form-btn{
     display: flex;
     flex-direction: column;
-    width: 98%;
-    margin: 10px 20px;
-}
-.form-content-message label{
-    margin: 10px 0px;
-    font-size: 1.2rem;
+    width: 100%;
+    margin: 10px 0;
 }
 .form-content-message textarea{
     width: 100%;
@@ -813,15 +811,18 @@ section{
     border: none;
     align-items: center;
     border-radius: 4px;
+    cursor: pointer;
     transition: transform 0.3s ease;
 }
 .form-btn .btn-validation:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #e06a0a;
     transform: translateY(-2px);
 }
 .error {
-    color: red;
-    font-size: 0.9em;
+    display: block;
+    margin-top: 0.5rem;
+    color: #dc3545;
+    font-size: 0.875rem;
 }
 /* <!------------------------------------- Fin Contact --------------------------------!> */
 
@@ -1077,8 +1078,8 @@ footer{
     .contact-content{
         max-width: 80%;
     }
-    .form-content{
-        width: 100%;
+    .form-content {
+        flex: 1 1 100%;
     }
     .footer-content{
         max-width: 80%;
@@ -1092,10 +1093,10 @@ footer{
     .footer-content .footer-item{
         width: 100%;
         color: #fff;
-        font-size: 0.6rem;
+        font-size: 1.2rem;
     }
     .footer-content .footer-item p{
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
      .copyright{
         width: 80%;
