@@ -1,11 +1,3 @@
-const menuHamburger = document.querySelector(".menu-icon");
-const navLinks = document.querySelector(".nav-links");
-
-menuHamburger.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobile-menu')
-});
-
-
 window.addEventListener('scroll',function reveal(){
     var reveals = document.querySelectorAll('.reveal');
 
@@ -23,6 +15,10 @@ window.addEventListener('scroll',function reveal(){
         }
     }
 } );
+
+document.querySelector('.burger-menu').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
 
 document.addEventListener('DOMContentLoaded', function() {
     // Gestion des projets
@@ -97,3 +93,4 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
     }
     
 });
+
