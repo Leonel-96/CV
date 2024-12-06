@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Oswald:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 :root {
     --primary-color: rgb(252, 136, 84);
@@ -1235,3 +1236,93 @@ footer{
     opacity: 0;
 }
 
+/* <!------- Test------------!> */
+.home-content {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInContent 1s ease forwards;
+}
+
+@keyframes slideInContent {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation pour l'image */
+.home-img {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideInImage 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes slideInImage {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation pour les icônes de réseaux sociaux */
+.social-media a {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.social-media a:nth-child(1) { animation-delay: 1s; }
+.social-media a:nth-child(2) { animation-delay: 1.2s; }
+.social-media a:nth-child(3) { animation-delay: 1.4s; }
+.social-media a:nth-child(4) { animation-delay: 1.6s; }
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animation pour les boutons */
+.btn-contact a {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: scaleIn 0.5s ease forwards;
+}
+
+.btn-contact a:nth-child(1) { animation-delay: 1.8s; }
+.btn-contact a:nth-child(2) { animation-delay: 2s; }
+
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animation de hover pour les boutons */
+.btn-option {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-option:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

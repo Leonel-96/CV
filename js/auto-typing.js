@@ -1,7 +1,11 @@
 let typed = new Typed('.auto-typing', {
-    strings: ["Ingénieur en expertise informatique et système d'information.",'Dévéloppeur Front-end.',' Dévéloppeur Back-end.','Dévéloppeur Full-stack.','Chef de Projet IT.'],
+    strings: ["Ingénieur en expertise informatique et système d'information.",
+        'Dévéloppeur Full-stack.',
+        'Chef de Projet IT.',
+        'Freelance.'],
+        
     typeSpeed:50,
-    backSpeed: 50,
+    backSpeed: 30,
     loop: true,
     fadeOut: true,
     fadeOutClass: 'type-fade-out',
